@@ -1,7 +1,9 @@
 ##Agenda
+* Initial Q&A - Where are you now?
 * Rant, rave, make dramatic hand gestures
-* Calmly test drive something
-* Instruct where to learn more
+* Calmly test drive something (code along)
+* BDD something slightly more interesting
+* Retrospective - What went well? What didn't go so well? What can I improve?
 
 ---
 
