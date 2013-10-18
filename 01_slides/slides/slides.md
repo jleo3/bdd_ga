@@ -146,9 +146,27 @@ Bugs were found and fixed in seconds
 </aside>
 
 ##How to Get Up and Running
-* Skip the test/ dirs with `rails new $app_name -skip-test-unit`
-* Add `gem 'rspec-rails'`, `gem 'capybara'` to Gemfile
-* `rake generate rspec:install`
+
+* Skip the test/ dirs and go straight to RSpec 
+
+    ```ruby
+    rails new $app_name --skip-test-unit
+    ```
+
+* Add to Gemfile:
+
+```ruby
+    group :test, :development do
+      gem 'rspec-rails'
+      gem 'capybara'
+      gem 'shoulda-matchers'
+      gem 'simplecov'
+    end
+```
+
+* ```bundle install```
+
+* `rails generate rspec:install`
 
 ```
     joe@warpaint:~/dev/ga/temp/slacker$ rails generate rspec:install
@@ -200,6 +218,13 @@ Bugs were found and fixed in seconds
 
 ##Test Driving
 ###Practice Ping Pong Pairing
+
+---
+
+##Lab Time - Games on Rails
+* no models
+* some behavior implemented (test driven)
+* BDD the games!
 
 ---
 
